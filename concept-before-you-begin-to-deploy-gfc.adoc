@@ -90,7 +90,7 @@ This port must be excluded from any WAN optimization devices or firewall restric
 The Global File Cache Management Server also requires a unique (geographical) NetBIOS name for the instance (such as GFC-MS1).
 
 [NOTE]
-One Management Server can support multiple Global File Cache Core instances deployed in different working environments. When deployed from Cloud Manager, each working environment has its own separate backend storage and would not contain the same data.
+One Management Server can support multiple Global File Cache Core instances deployed in different working environments. When deployed from BlueXP, each working environment has its own separate backend storage and would not contain the same data.
 
 === Global File Cache Core
 
@@ -118,7 +118,7 @@ Depending on the level of restrictions and GPOs in the network environment, this
 
 ** The account option "User Must Change Password at Next Logon" should be DISABLED (unchecked).
 
-** It must be a member of the back-end file server Built-in Backup Operators group (this is automatically enabled when deployed through Cloud Manager).
+** It must be a member of the back-end file server Built-in Backup Operators group (this is automatically enabled when deployed through BlueXP).
 
 === License Management Server
 
