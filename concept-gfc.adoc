@@ -53,7 +53,7 @@ The supported storage platforms for Global File Cache differ depending on the de
 
 === Automated deployment options
 
-Global File Cache is supported with the following types of working environments when deployed using BlueXP:
+Global File Cache is supported with the following types of working environments when deployed using BlueXP (formerly Cloud Manager):
 
 * Cloud Volumes ONTAP in Azure
 * Cloud Volumes ONTAP in AWS
