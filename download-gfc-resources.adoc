@@ -22,12 +22,12 @@ Download the Global File Cache Virtual Templates you are planning to use in your
 * Windows Server 2016 Virtual Template:
 +
 https://repo.cloudsync.netapp.com/gfc/2K16-1_3_0_41.zip[Windows Server 2016 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
-https://repo.cloudsync.netapp.com/gfc/2k16_GFC_1_3_0_41IMAGE.zip[Windows Server 2016 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
+https://repo.cloudsync.netapp.com/gfc/2k16_GFC_2_1_0_31IMAGE.zip[Windows Server 2016 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
 * Windows Server 2019 Virtual Template:
 +
 https://repo.cloudsync.netapp.com/gfc/2K19-1_3_0_41.zip[Windows Server 2019 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
-https://repo.cloudsync.netapp.com/gfc/2k19_GFC_1_3_0_41IMAGE.zip[Windows Server 2019 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
+https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_1_0_31IMAGE.zip[Windows Server 2019 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
 * Global File Cache Edge Software:
 +
@@ -39,8 +39,7 @@ https://repo.cloudsync.netapp.com/gfc/SCOM-151.zip[NetApp GFC SCOM Management Pa
 
 * Global File Cache Documentation:
 +
-https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.docx[NetApp Global File Cache User Guide (.DOCX)^]
-//https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide (.PDF)^]
+https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide (.PDF)^]
 
 link:task-deploy-gfc-edge-instances.html#update-global-file-cache-edge-software[Follow these steps] to upgrade your Global File Cache Edge software.
 
@@ -134,7 +133,7 @@ Global File Cache runs on Windows Server 2016 and 2019, hence the virtualization
 
 Disk Latency on the Global File Cache Intelligent File Cache disk (D:\) should deliver < 0.5ms average I/O disk latency and 1MiBps throughput per concurrent user.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Networking
 
@@ -150,13 +149,13 @@ Global File Cache transparently integrates into customer’s environments, allow
 
 To ensure an optimal experience and performance, it is important to comply with the Microsoft Windows Client requirements and best practices as outlined in the Global File Cache User Guide. This applies to all versions of Microsoft Windows.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Firewall and Antivirus best practices
 
 While Global File Cache makes a reasonable effort to validate that the most common antivirus application suites are compatible with Global File Cache, NetApp cannot guarantee and is not responsible for any incompatibilities or performance issues caused by these programs, or their associated updates, service packs, or modifications.
 
-Global File Cache does not recommend the installation nor application of monitoring or antivirus solutions on any Global File Cache enabled instance (Core or Edge). Should a solution be installed, by choice or by policy, the following best practices and recommendations must be applied. For common antivirus suites, see Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+Global File Cache does not recommend the installation nor application of monitoring or antivirus solutions on any Global File Cache enabled instance (Core or Edge). Should a solution be installed, by choice or by policy, the following best practices and recommendations must be applied. For common antivirus suites, see Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Firewall settings
 
@@ -183,7 +182,7 @@ This section helps you to understand the requirements when running antivirus sof
 [NOTE]
 Adding antivirus to an Edge appliance can introduce a 10–20% impact on user performance.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 ==== Configure exclusions
 
