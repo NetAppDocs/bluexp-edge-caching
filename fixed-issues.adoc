@@ -15,6 +15,17 @@ summary: See what issues have been fixed in Global File Cache.
 [.lead]
 See what issues have been fixed in Global File Cache.
 
+== 24 October 2022 (version 2.1)
+
+* An additional validation of GFC subscription number is performed during licensing configuration.
+* Removed individual file transfer information propagation to Cloud Insights, but added File transfer summary information propagation to Cloud Insights. This reduces enormous load on CI.
+* GFC added support to extend the license for a specific duration for Zuora based license. Extension can be performed by GFC support.
+* Fix data and metadata ingestion into Cloud Insights. APIs were expecting a certain format on the timestamp. This enables for data visualization CI.
+* Added a 15 sec delay before writing minidump after crash. Also add a timer to monitor the minidump and forcibly exit process if the dump does not complete in 60 secs. This minor platform enhancements will help for better analysis.
+* Fix Optimus (Configuration UI)  to not hang while clicking "Registering instance to CI" button. 
+* Fix a corner case, where Tservice is left manual during first time configuration. 
+* Fix various minor bug fixes in GFC CI Agent CLient service.
+
 == 25 July 2022 (version 2.0)
 
 * Optimus is enhanced by adding boundary limits to date/time parameters for pre-population job addition configuration.
@@ -50,9 +61,3 @@ See what issues have been fixed in Global File Cache.
 * The GFC Kernel driver is enhanced to avoid a crash in the SMB Server service in Windows Server 2016/2019.
 * Fixed an exception in the LMS Service.
 * Service Start types for the License Manager Server Service (LMS), License Manager Client Service (LMC), and Pre-population Service (TappN) are changed from 'Automatic Delayed' to 'Automatic'.
-
-== 9 June 2021 (version 1.1.0)
-
-* The Configuration UI now displays the Edge hostname correctly in the Edit Pre-population page.
-* An issue in parsing the json response from the NetApp License subscription server during license registration is fixed.
-* Pre-population (TappN) logs are enhanced to log the file transfer status of all the files.

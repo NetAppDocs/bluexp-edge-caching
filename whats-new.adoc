@@ -18,7 +18,19 @@ Learn what's new in Global File Cache.
 // tag::whats-new[]
 == 24 October 2022 (version 2.1)
 
-Global File Cache Edge software for version 2.1 is available at https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources[this page].
+This release provide the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
+
+=== Global File Cache is now available with any number of licenses
+
+The previous minimum requirement of 10 licenses, or 30 TB of storage, has been removed. One Global File Cache license will be issued for every 3 TB of storage.
+
+=== Support has been added for using an offline License Management Server
+
+An offline, or dark-site, License Management Server (LMS) is most useful when the LMS does not have an internet connection for license validation with license sources. AN internet connection and connection to license source is required during initial configuration. Once configured, the LMS instance can become dark. All Edges/Cores should have a connection with LMS for continuous validation of licenses.
+
+=== Enhanced Optimus PSM to configure Cloud Licensing
+
+=== Enhanced the Edge Sync feature in Optimus UI (Edge Configuration) to show all connected clients
 
 == 25 July 2022 (version 2.0)
 
