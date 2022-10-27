@@ -101,7 +101,7 @@ The cost to use Global File Cache depends on the type of installation you have c
 
 ** Global File Cache Management Server:
 +
-In Azure, this runs on a D2s_V3 or equivalent (2 vCPU/8 GB RAM) VM with 127 GB premium SSD
+In Azure, this runs on a D2s_V3 or equivalent (2 vCPU/8 GB RAM) VM with 127 GB Standard SSD
 +
 In AWS, this runs on a m4.large or equivalent (2 vCPU/8 GB RAM) instance with 127 GB general purpose SSD
 

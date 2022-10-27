@@ -49,10 +49,10 @@ You can leverage multiple Global File Cache Edge and Core instances simultaneous
 
 === Number of concurrent users per Edge instance
 
-Global File Cache Edge handles the heavy lifting in terms of caching algorithms and file-level differencing. A single Global File Cache Edge instance can serve up to 400 users per dedicated physical Edge instance, and up to 200 users for dedicated virtual deployments. This is dependent to a significant degree upon the type and mean file size of the most common workload. For larger collaborative file types, guide towards 50% of the maximum users per Global File Cache Edge lower boundary (depending on physical or virtual deployment). For more common Office items with a mean file size <1MB, guide towards the 100% users per Global File Cache Edge upper boundary (depending on physical or virtual deployment).
+Global File Cache Edge handles the heavy lifting in terms of caching algorithms and file-level differencing. A single Global File Cache Edge instance can serve up to 500 users per dedicated physical Edge instance, and up to 300 users for dedicated virtual deployments. This is dependent to a significant degree upon the type and mean file size of the most common workload. For larger collaborative file types, guide towards 50% of the maximum users per Global File Cache Edge lower boundary (depending on physical or virtual deployment). For more common Office items with a mean file size <1MB, guide towards the 100% users per Global File Cache Edge upper boundary (depending on physical or virtual deployment).
 
 [NOTE]
-Global File Cache Edge detects whether it is running on a virtual or physical instance and it will limit the number of SMB connections to the local virtual file share to the maximum of 200 or 400 concurrent connections.
+Global File Cache Edge detects whether it is running on a virtual or physical instance and it will limit the number of SMB connections to the local virtual file share to the maximum of 300 or 500 concurrent connections.
 
 === Number of concurrent users per Core instance
 
@@ -82,8 +82,15 @@ We recommend that the volume is large enough to accommodate the total data set f
 
 This Global File Cache Management Server requires external access over HTTPS (TCP port 443) to connect to the cloud provider subscription service and to access these URLs:
 
-*  https://talonazuremicroservices.azurewebsites.net[https://talonazuremicroservices.azurewebsites.net]
-*  https://talonlicensing.table.core.windows.net[https://talonlicensing.table.core.windows.net]
+* If you are using GFC subscription-based licensing:
+
+** \https://rest.zuora.com/v1/subscriptions/
+** \https://rest.zuora.com/oauth/token
+
+* If you are using NetApp legacy-based licensing:
+
+** \https://talonazuremicroservices.azurewebsites.net
+** \https://talonlicensing.table.core.windows.net
 
 This port must be excluded from any WAN optimization devices or firewall restriction policies for the Global File Cache software to operate properly.
 
@@ -126,7 +133,7 @@ Depending on the level of restrictions and GPOs in the network environment, this
 
 * If you require a separate Global File Cache LMS instance, you need to install the latest Global File Cache software installation package on a pristine Microsoft Windows Server instance.
 
-* The LMS instance needs to be able to connect to the subscription service (Azure Services / public internet) using HTTPS (TCP port 443).
+* The LMS instance needs to be able to connect to the subscription service (public internet) using HTTPS (TCP port 443).
 
 * The Core and Edge instances need to connect to the LMS instance using HTTPS (TCP port 443).
 

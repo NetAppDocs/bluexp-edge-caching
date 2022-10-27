@@ -32,10 +32,10 @@ https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_1_0_31IMAGE.zip[Windows Server 
 * Global File Cache Edge Software:
 +
 https://repo.cloudsync.netapp.com/gfc/GFC-2-1-0-31-Release.exe[NetApp GFC Software Installation Package (.EXE)^]
-
-* Global File Cache SCOM (Microsoft Systems Center Operations Manager) Package:
-+
-https://repo.cloudsync.netapp.com/gfc/SCOM-151.zip[NetApp GFC SCOM Management Package (.ZIP)]
+//
+// * Global File Cache SCOM (Microsoft Systems Center Operations Manager) Package:
+// +
+// https://repo.cloudsync.netapp.com/gfc/SCOM-151.zip[NetApp GFC SCOM Management Package (.ZIP)]
 
 * Global File Cache Documentation:
 +
@@ -43,7 +43,7 @@ https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Gui
 
 link:task-deploy-gfc-edge-instances.html#update-global-file-cache-edge-software[Follow these steps] to upgrade your Global File Cache Edge software.
 
-NOTE: When deploying Global File Cache on a Windows Server 2016, you should be using .NET Framework 4.8.
+NOTE: When deploying Global File Cache on a Windows Server 2016, you should be using .NET Framework 4.8 and Windows Web View2 framework.
 
 == Designing and deploying Global File Cache Edge
 
@@ -177,7 +177,7 @@ Global File Cache does not recommend the installation nor application of monitor
 
 === Antivirus best practices
 
-This section helps you to understand the requirements when running antivirus software on a Windows Server instance running Global File Cache. Global File Cache has tested most commonly used antivirus products including Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky and Windows Defender for use in conjunction with Global File Cache.
+This section helps you to understand the requirements when running antivirus software on a Windows Server instance running Global File Cache. Global File Cache has tested most commonly used antivirus products including Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium, and Windows Defender for use in conjunction with Global File Cache. The antivirus software should be certified by NetApp and is supported only if configured with the proper exclusion list. See Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
 
 [NOTE]
 Adding antivirus to an Edge appliance can introduce a 10–20% impact on user performance.
@@ -207,6 +207,8 @@ In addition to the D:\ drive, the following Global File Cache directory and proc
 * `C:\Program Files\TalonFAST\Bin\TappN.exe`
 
 * `C:\Program Files\TalonFAST\Bin\FTLSummaryGenerator.exe`
+
+* 'C:\Program Files\TalonFAST\Bin\GfcCIAgentService.exe'
 
 * `C:\Program Files\TalonFAST\Bin\RFASTSetupWizard.exe`
 
