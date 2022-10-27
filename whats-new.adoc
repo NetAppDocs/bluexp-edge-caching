@@ -18,7 +18,7 @@ Learn what's new in Global File Cache.
 // tag::whats-new[]
 == 24 October 2022 (version 2.1)
 
-This release provide the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
+This release provides the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
 
 === Global File Cache is now available with any number of licenses
 
@@ -26,7 +26,7 @@ The previous minimum requirement of 10 licenses, or 30 TB of storage, has been r
 
 === Support has been added for using an offline License Management Server
 
-An offline, or dark-site, License Management Server (LMS) is most useful when the LMS does not have an internet connection for license validation with license sources. AN internet connection and connection to license source is required during initial configuration. Once configured, the LMS instance can become dark. All Edges/Cores should have a connection with LMS for continuous validation of licenses.
+An offline, or dark site, License Management Server (LMS) is most useful when the LMS does not have an internet connection for license validation with license sources. An internet connection and connection to license source is required during initial configuration. Once configured, the LMS instance can become dark. All Edges/Cores should have a connection with LMS for continuous validation of licenses.
 
 === Enhanced Optimus PSM to configure Cloud Licensing
 
@@ -34,7 +34,7 @@ An offline, or dark-site, License Management Server (LMS) is most useful when th
 
 == 25 July 2022 (version 2.0)
 
-This release provide the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
+This release provides the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
 
 === New capacity-based licensing model for Global File Cache through the Azure Marketplace
 
@@ -44,7 +44,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 === Global File Cache is now integrated with Cloud Insights
 
-NetApp Cloud Insights (CI) gives complete visibility into your infrastructure and applications. Global File Cache is now integrated with CI to provide complete visibility of all edges and cores; monitoring processes running on the instances. Various Global File Cache metrics are pushed to CI to provide a complete overview on the CI dashboard.
+NetApp Cloud Insights (CI) gives complete visibility into your infrastructure and applications. Global File Cache is now integrated with CI to provide complete visibility of all edges and cores; monitoring processes running on the instances. Various Global File Cache metrics are pushed to CI to provide a complete overview on the CI dashboard.  See Chapter 11 in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
 
 https://cloud.netapp.com/cloud-insights[Learn more about Cloud Insights.]
 
@@ -78,17 +78,3 @@ The Global File Cache License Management Server (LMS) service is enhanced to aut
 This is the latest version and it is more secure. This module is used for secure communication between GFC Edge and GFC Core.
 
 === The logging infrastructure has been enhanced
-
-== 9 June 2021 (version 1.1.0)
-
-=== The "Edge Synchronization" feature has been added
-
-This feature keeps multiple Edges at a remote office in sync and the data is always cached/warm. When a file is flushed/fetched at one Edge, then the same file on all Edges participating in Edge Sync is updated and cached. See section 8.4 in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^] for details.
-
-=== The OpenSSL module has been upgraded to version 1.1.1k
-
-This is the latest version and it is more secure. This module is used for secure communication between GFC Edge and GFC Core.
-
-=== Updated License Registration Page
-
-The GFC License Registration Page now displays the number of licenses when activated through a NetApp subscription.

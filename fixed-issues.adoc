@@ -17,14 +17,14 @@ See what issues have been fixed in Global File Cache.
 
 == 24 October 2022 (version 2.1)
 
-* An additional validation of GFC subscription number is performed during licensing configuration.
+* An additional validation of the GFC subscription number is performed during licensing configuration.
+* GFC added support to extend the license for a specific duration for Zuora-based licenses. Contact GFC support.
+* Added a 15 sec delay before writing a minidump after a crash. Also added a timer to monitor the minidump and forcibly exit the process if the dump does not complete in 60 secs. These minor enhancements will help for better analysis.
 * Removed individual file transfer information propagation to Cloud Insights, but added File transfer summary information propagation to Cloud Insights. This reduces enormous load on CI.
-* GFC added support to extend the license for a specific duration for Zuora based license. Extension can be performed by GFC support.
-* Fix data and metadata ingestion into Cloud Insights. APIs were expecting a certain format on the timestamp. This enables for data visualization CI.
-* Added a 15 sec delay before writing minidump after crash. Also add a timer to monitor the minidump and forcibly exit process if the dump does not complete in 60 secs. This minor platform enhancements will help for better analysis.
-* Fix Optimus (Configuration UI)  to not hang while clicking "Registering instance to CI" button. 
-* Fix a corner case, where Tservice is left manual during first time configuration. 
-* Fix various minor bug fixes in GFC CI Agent CLient service.
+* Fixed data and metadata ingestion into Cloud Insights. This enables for data visualization CI.
+* Fixed the Optimus Configuration UI to not hang while clicking the "Registering instance to CI" button. 
+* Fixed an issue where the Tservice monitor is left manual during initial configuration. 
+* Fixed minor bugs in the GFC CI Agent CLient service.
 
 == 25 July 2022 (version 2.0)
 
