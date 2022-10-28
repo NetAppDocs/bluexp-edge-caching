@@ -21,12 +21,12 @@ Download the Global File Cache Virtual Templates you are planning to use in your
 
 * Windows Server 2016 Virtual Template:
 +
-https://repo.cloudsync.netapp.com/gfc/2K16-1_3_0_41.zip[Windows Server 2016 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
+https://repo.cloudsync.netapp.com/gfc/2k16-2.1.zip[Windows Server 2016 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
 https://repo.cloudsync.netapp.com/gfc/2k16_GFC_2_1_0_31IMAGE.zip[Windows Server 2016 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
 * Windows Server 2019 Virtual Template:
 +
-https://repo.cloudsync.netapp.com/gfc/2K19-1_3_0_41.zip[Windows Server 2019 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
+https://repo.cloudsync.netapp.com/gfc/2k19-2.1.zip[Windows Server 2019 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
 https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_1_0_31IMAGE.zip[Windows Server 2019 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
 * Global File Cache Edge Software:
@@ -37,13 +37,17 @@ https://repo.cloudsync.netapp.com/gfc/GFC-2-1-0-31-Release.exe[NetApp GFC Softwa
 // +
 // https://repo.cloudsync.netapp.com/gfc/SCOM-151.zip[NetApp GFC SCOM Management Package (.ZIP)]
 
+* Global File Cache Dashboards for Cloud Insights:
++
+https://repo.cloudsync.netapp.com/gfc/ci-gfc-dashboards.zip[NetApp GFC Cloud Insights Dashboards (.ZIP)]
+
 * Global File Cache Documentation:
 +
 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide (.PDF)^]
 
 link:task-deploy-gfc-edge-instances.html#update-global-file-cache-edge-software[Follow these steps] to upgrade your Global File Cache Edge software.
 
-NOTE: When deploying Global File Cache on a Windows Server 2016, you should be using .NET Framework 4.8 and Windows Web View2 framework.
+NOTE: When deploying Global File Cache on a Windows Server 2016, you should be using .NET Framework 4.8 and Windows WebView2 framework.
 
 == Designing and deploying Global File Cache Edge
 
