@@ -18,7 +18,7 @@ Learn what's new in Global File Cache.
 // tag::whats-new[]
 == 24 October 2022 (version 2.1)
 
-This release provides the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
+This release provides the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues]. Updated software packages are available at https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources[this page].
 
 === Global File Cache is now available with any number of licenses
 
@@ -27,6 +27,10 @@ The previous minimum requirement of 10 licenses, or 30 TB of storage, has been r
 === Support has been added for using an offline License Management Server
 
 An offline, or dark site, License Management Server (LMS) is most useful when the LMS does not have an internet connection for license validation with license sources. An internet connection and connection to license source is required during initial configuration. Once configured, the LMS instance can become dark. All Edges/Cores should have a connection with LMS for continuous validation of licenses.
+
+=== Edge instances can support additional concurrent users
+
+A single Global File Cache Edge instance can serve up to 500 users per dedicated physical Edge instance, and up to 300 users for dedicated virtual deployments. The maximum number of users used to be 400 and 200, respectively.
 
 === Enhanced Optimus PSM to configure Cloud Licensing
 
@@ -44,7 +48,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 
 === Global File Cache is now integrated with Cloud Insights
 
-NetApp Cloud Insights (CI) gives complete visibility into your infrastructure and applications. Global File Cache is now integrated with CI to provide complete visibility of all edges and cores; monitoring processes running on the instances. Various Global File Cache metrics are pushed to CI to provide a complete overview on the CI dashboard.  See Chapter 11 in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
+NetApp Cloud Insights (CI) gives complete visibility into your infrastructure and applications. Global File Cache is now integrated with CI to provide complete visibility of all edges and cores; monitoring processes running on the instances. Various Global File Cache metrics are pushed to CI to provide a complete overview on the CI dashboard. See Chapter 11 in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
 
 https://cloud.netapp.com/cloud-insights[Learn more about Cloud Insights.]
 
