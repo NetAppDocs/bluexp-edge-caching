@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-gfc-getting-started.html
 keywords: global file cache, core, management server
-summary: You use Cloud Manager to deploy the Global File Cache Management Server and Global File Cache Core software in the working environment.
+summary: You use BlueXP to deploy the Global File Cache Management Server and Global File Cache Core software in the working environment.
 ---
 
 = Getting started
@@ -13,11 +13,11 @@ summary: You use Cloud Manager to deploy the Global File Cache Management Server
 :imagesdir: ./media/
 
 [.lead]
-You use Cloud Manager to deploy the Global File Cache Management Server and Global File Cache Core software in the working environment.
+You use BlueXP to deploy the Global File Cache Management Server and Global File Cache Core software in the working environment.
 
-== Enable Global File Cache using Cloud Manager
+== Enable Global File Cache using BlueXP
 
-In this configuration you will deploy the Global File Cache Management Server and Global File Cache Core in the same working environment where you created your Cloud Volumes ONTAP system using Cloud Manager.
+In this configuration you will deploy the Global File Cache Management Server and Global File Cache Core in the same working environment where you created your Cloud Volumes ONTAP system using BlueXP.
 
 Watch link:https://www.youtube.com/watch?v=TGIQVssr43A[this video^] to see the steps from start to finish.
 
@@ -48,7 +48,7 @@ Configure the Global File Cache License Management Server (LMS) service on a Glo
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[Five] Deploy the Global File Cache Edge instances
 
 [role="quick-margin-para"]
-See link:task-deploy-gfc-edge-instances.html[Deploying Global File Cache Edge instances^] to deploy the Global File Cache Edge instances in each remote location. This step is not done using Cloud Manager.
+See link:task-deploy-gfc-edge-instances.html[Deploying Global File Cache Edge instances^] to deploy the Global File Cache Edge instances in each remote location. This step is not done using BlueXP.
 
 === Deploy Cloud Volumes ONTAP as your storage platform
 
