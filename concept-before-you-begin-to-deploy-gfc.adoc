@@ -19,7 +19,7 @@ There are many requirements you need to be aware of before you begin to deploy G
 
 Depending on your requirements, you may need to deploy one or multiple Global File Cache Core instances to create the Global File Cache Fabric. The Core instance is designed to act as a traffic cop between your distributed Global File Cache Edge instances and the data center file server resources, for example, file shares, folders, and files.
 
-When you are designing your Global File Cache deployment you need to determine what’s right for your environment in terms of scale, availability of resources,  and in terms of redundancy. Global File Cache Core can be deployed in the following ways:
+When you are designing your Global File Cache deployment you need to determine what's right for your environment in terms of scale, availability of resources,  and in terms of redundancy. Global File Cache Core can be deployed in the following ways:
 
 * GFC Core stand-alone instance
 * GFC Core Load Distributed design (Cold Standby)
@@ -68,7 +68,7 @@ Global File Cache Edge prerequisites are described link:download-gfc-resources.h
 
 === Storage platform (volumes)
 
-The back-end storage platform – in this case, your deployed Cloud Volumes ONTAP instance - should present SMB file shares.  Any shares that will be exposed through Global File Cache must allow the Everyone group Full Control at the share level, while restricting permissions through NTFS permissions.
+The back-end storage platform - in this case, your deployed Cloud Volumes ONTAP instance - should present SMB file shares. Any shares that will be exposed through Global File Cache must allow the Everyone group Full Control at the share level, while restricting permissions through NTFS permissions.
 
 If you have not set up at least one SMB file share on the Cloud Volumes ONTAP instance, then you need to have the following information ready so you can configure this information during installation:
 
@@ -82,15 +82,11 @@ We recommend that the volume is large enough to accommodate the total data set f
 
 This Global File Cache Management Server requires external access over HTTPS (TCP port 443) to connect to the cloud provider subscription service and to access these URLs:
 
-* If you are using GFC subscription-based licensing:
-
-** \https://rest.zuora.com/v1/subscriptions/
-** \https://rest.zuora.com/oauth/token
-
-* If you are using NetApp legacy-based licensing:
-
-** \https://talonazuremicroservices.azurewebsites.net
-** \https://talonlicensing.table.core.windows.net
+* \https://gfcproxyforcm-prod.azurewebsites.net/
+* \https://rest.zuora.com/v1/subscriptions/
+* \https://rest.zuora.com/oauth/token
+* \https://talonazuremicroservices.azurewebsites.net
+* \https://talonlicensing.table.core.windows.net
 
 This port must be excluded from any WAN optimization devices or firewall restriction policies for the Global File Cache software to operate properly.
 
@@ -161,6 +157,6 @@ The Global File Cache LMS requires external access over HTTPS (TCP port 443) to 
 
 * Firewall: TCP ports should be allowed between Global File Cache Edge and Core instances.
 
-* Global File Cache TCP Ports: 443 (HTTPS), 6618–6630.
+* Global File Cache TCP Ports: 443 (HTTPS), 6618-6630.
 
 * Network optimization devices (such as Riverbed Steelhead) must be configured to pass-thru Global File Cache specific ports (TCP 6618-6630).
