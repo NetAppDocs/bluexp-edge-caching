@@ -15,6 +15,14 @@ summary: See what issues have been fixed in Global File Cache.
 [.lead]
 See what issues have been fixed in Global File Cache.
 
+== 27 March 2023 (version 2.2)
+
+* Fixed an issue of converting the time format of running a pre-population job for 'last modification time' option.
+* Fixed an issue related to parsing of file transfer and passing it on to Cloud Insights service.
+* Edge Sync of files across all subscribers is reconnected automatically when there is a disconnect with the publisher.
+* Fixed pre-population job execution on an Edge if its connected to multiple Cores.
+* Optimus UI now shows the connected Edge list on a publisher that participates in Edge Sync functionality.
+
 == 24 October 2022 (version 2.1)
 
 * An additional validation of the GFC subscription number is performed during licensing configuration.
