@@ -22,16 +22,16 @@ Download the Global File Cache Virtual Templates you are planning to use in your
 * Windows Server 2016 Virtual Template:
 +
 https://repo.cloudsync.netapp.com/gfc/2k16-2.1.zip[Windows Server 2016 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
-https://repo.cloudsync.netapp.com/gfc/2k16_GFC_2_1_0_31IMAGE.zip[Windows Server 2016 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
+https://repo.cloudsync.netapp.com/gfc/2k16_GFC_2_2_0_41IMAGE.zip[Windows Server 2016 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
 * Windows Server 2019 Virtual Template:
 +
 https://repo.cloudsync.netapp.com/gfc/2k19-2.1.zip[Windows Server 2019 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
-https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_1_0_31IMAGE.zip[Windows Server 2019 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
+https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_2_0_41IMAGE.zip[Windows Server 2019 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
 * Global File Cache Edge Software:
 +
-https://repo.cloudsync.netapp.com/gfc/GFC-2-1-0-31-Release.exe[NetApp GFC Software Installation Package (.EXE)^]
+https://repo.cloudsync.netapp.com/gfc/GFC-2-2-0-41-Release.exe[NetApp GFC Software Installation Package (.EXE)^]
 //
 // * Global File Cache SCOM (Microsoft Systems Center Operations Manager) Package:
 // +
@@ -43,7 +43,7 @@ https://repo.cloudsync.netapp.com/gfc/ci-gfc-dashboards.zip[NetApp GFC Cloud Ins
 
 * Global File Cache Documentation:
 +
-https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide (.PDF)^]
+https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide (.PDF)^]
 
 link:task-deploy-gfc-edge-instances.html#update-global-file-cache-edge-software[Follow these steps] to upgrade your Global File Cache Edge software.
 
@@ -53,7 +53,7 @@ NOTE: When deploying Global File Cache on a Windows Server 2016, you should be u
 
 Depending on your requirements, you might need to deploy one or multiple Global File Cache Edge instances based on the concurrent user sessions in a branch office. The Edge instance presents the virtual file share to the end users within the branch office, which has been transparently extended from the associated Global File Cache Core instance. The Global File Cache Edge should contain a `D:\` NTFS volume, which contains the cached files within the branch office.
 
-NOTE: For the Global File Cache Edge, it is important to understand the link:concept-before-you-begin-to-deploy-gfc.html#sizing-guidelines[sizing guidelines]. This will assist you in making the correct design for your Global File Cache deployment. You would also need to determine what’s right for your environment in terms of scale, availability of resources, and in terms of redundancy.
+NOTE: For the Global File Cache Edge, it is important to understand the link:concept-before-you-begin-to-deploy-gfc.html#sizing-guidelines[sizing guidelines]. This will assist you in making the correct design for your Global File Cache deployment. You would also need to determine what's right for your environment in terms of scale, availability of resources, and in terms of redundancy.
 
 === Global File Cache Edge instance
 
@@ -137,29 +137,29 @@ Global File Cache runs on Windows Server 2016 and 2019, hence the virtualization
 
 Disk Latency on the Global File Cache Intelligent File Cache disk (D:\) should deliver < 0.5ms average I/O disk latency and 1MiBps throughput per concurrent user.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Networking
 
 * Firewall: TCP ports should be allowed between the Global File Cache Edge and Management Server and Core instances.
 +
-Global File Cache TCP Ports: 443 (HTTPS - LMS), 6618 – 6630.
+Global File Cache TCP Ports: 443 (HTTPS - LMS), 6618 - 6630.
 
 * Network optimization devices (such as Riverbed Steelhead) must be configured to pass-thru Global File Cache specific ports (TCP 6618-6630).
 
 === Client workstation and application best practices
 
-Global File Cache transparently integrates into customer’s environments, allowing users to access centralized data using their client workstations, running enterprise applications. Using Global File Cache, data is accessed through a direct drive mapping or through a DFS namespace. For more information about the Global File Cache Fabric, Intelligent File Caching, and key aspects of the software, consult the link:concept-before-you-begin-to-deploy-gfc.html[Before you begin to Deploy Global File Cache^] section.
+Global File Cache transparently integrates into customer's environments, allowing users to access centralized data using their client workstations, running enterprise applications. Using Global File Cache, data is accessed through a direct drive mapping or through a DFS namespace. For more information about the Global File Cache Fabric, Intelligent File Caching, and key aspects of the software, consult the link:concept-before-you-begin-to-deploy-gfc.html[Before you begin to Deploy Global File Cache^] section.
 
 To ensure an optimal experience and performance, it is important to comply with the Microsoft Windows Client requirements and best practices as outlined in the Global File Cache User Guide. This applies to all versions of Microsoft Windows.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Firewall and Antivirus best practices
 
 While Global File Cache makes a reasonable effort to validate that the most common antivirus application suites are compatible with Global File Cache, NetApp cannot guarantee and is not responsible for any incompatibilities or performance issues caused by these programs, or their associated updates, service packs, or modifications.
 
-Global File Cache does not recommend the installation nor application of monitoring or antivirus solutions on any Global File Cache enabled instance (Core or Edge). Should a solution be installed, by choice or by policy, the following best practices and recommendations must be applied. For common antivirus suites, see Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+Global File Cache does not recommend the installation nor application of monitoring or antivirus solutions on any Global File Cache enabled instance (Core or Edge). Should a solution be installed, by choice or by policy, the following best practices and recommendations must be applied. For common antivirus suites, see Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Firewall settings
 
@@ -181,12 +181,12 @@ Global File Cache does not recommend the installation nor application of monitor
 
 === Antivirus best practices
 
-This section helps you to understand the requirements when running antivirus software on a Windows Server instance running Global File Cache. Global File Cache has tested most commonly used antivirus products including Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium, and Windows Defender for use in conjunction with Global File Cache. The antivirus software should be certified by NetApp and is supported only if configured with the proper exclusion list. See Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
+This section helps you to understand the requirements when running antivirus software on a Windows Server instance running Global File Cache. Global File Cache has tested most commonly used antivirus products including Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium, and Windows Defender for use in conjunction with Global File Cache. The antivirus software should be certified by NetApp and is supported only if configured with the proper exclusion list. See Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
 
 [NOTE]
-Adding antivirus to an Edge appliance can introduce a 10–20% impact on user performance.
+Adding antivirus to an Edge appliance can introduce a 10-20% impact on user performance.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.1.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 ==== Configure exclusions
 
@@ -254,12 +254,12 @@ Global File Cache instances are designed specifically for Global File Cache as t
 
 * The customer is responsible for any non-Global File Cache software which might be installed on the server running Global File Cache:
 
-** If any third-party software package causes software or resource conflicts with Global File Cache or performance is compromised,  Global File Cache’s support organization might require the customer to disable or remove the software from the server running Global File Cache.
+** If any third-party software package causes software or resource conflicts with Global File Cache or performance is compromised,  Global File Cache's support organization might require the customer to disable or remove the software from the server running Global File Cache.
 
-** It is the customer’s responsibility for all installation, integration, support, and upgrade of any software added to the server running the Global File Cache application.
+** It is the customer's responsibility for all installation, integration, support, and upgrade of any software added to the server running the Global File Cache application.
 
 * Systems management utilities/agents such as antivirus tools and licensing agents might be able to coexist. However, except for the supported services and applications listed above, these applications are not supported by Global File Cache and the same guidelines as above must still be followed:
 
-** It is the customer’s responsibility for all installation, integration, support, and upgrade of any software added.
+** It is the customer's responsibility for all installation, integration, support, and upgrade of any software added.
 
-** If a customer does install any third-party software package that causes, or is suspected to be causing, software or resource conflicts with Global File Cache or performance is compromised, there might be a requirement by Global File Cache’s support organization to disable/remove the software.
+** If a customer does install any third-party software package that causes, or is suspected to be causing, software or resource conflicts with Global File Cache or performance is compromised, there might be a requirement by Global File Cache's support organization to disable/remove the software.
