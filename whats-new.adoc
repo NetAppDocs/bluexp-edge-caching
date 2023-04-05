@@ -16,9 +16,23 @@ summary: Learn what's new in Global File Cache.
 Learn what's new in Global File Cache.
 
 // tag::whats-new[]
-== 24 October 2022 (version 2.1)
+== 5 April 2023 (version 2.2)
 
 This release provides the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues]. Updated software packages are available at https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources[this page].
+
+=== Support for Global File Cache on Cloud Volumes ONTAP systems deployed in Google Cloud
+
+A new "Edge Cache" license is available when deploying a Cloud Volumes ONTAP system in Google Cloud. You are entitled to deploy one Global File Cache Edge system for each 3 TiB of purchased capacity on the Cloud Volumes ONTAP system.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages[Learn more about the Edge Cache license package.]
+
+=== The setup wizard and GFC Configuration UI are enhanced to perform NetApp license registration
+
+=== Enhanced Optimus PSM to configure Edge Sync functionality
+
+== 24 October 2022 (version 2.1)
+
+This release provides the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
 
 === Global File Cache is now available with any number of licenses
 
@@ -57,11 +71,11 @@ https://cloud.netapp.com/cloud-insights[Learn more about Cloud Insights.]
 During license configuration, the License Management Server (LMS) should have access to the internet to collect the licensing details from NetApp/Zuora. Once the configuration is successful, the LMS can continue to work in offline mode and provide licensing capabilities despite being in restrictive environments.
 
 === The Edge Sync UI in Optimus has been enhanced to show the list of connected clients on a coordinator Edge
+// end::whats-new[]
 
 == 23 June 2022 (version 1.3.1)
 
-Global File Cache Edge software for version 1.3.1 is available at https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources[this page]. This release fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
-// end::whats-new[]
+This release fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues].
 
 == 19 May 2022 (version 1.3.0)
 
