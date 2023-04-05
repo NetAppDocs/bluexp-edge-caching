@@ -16,9 +16,15 @@ summary: Learn what's new in Global File Cache.
 Learn what's new in Global File Cache.
 
 // tag::whats-new[]
-== 27 March 2023 (version 2.2)
+== 5 April 2023 (version 2.2)
 
 This release provides the new features listed below. It also fixes the issues described in the https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html[Fixed Issues]. Updated software packages are available at https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources[this page].
+
+=== Support for Global File Cache on Cloud Volumes ONTAP systems deployed in Google Cloud
+
+A new "Edge Cache" license is available when deploying a Cloud Volumes ONTAP system in Google Cloud. You are entitled to deploy one Global File Cache Edge system for each 3 TiB of purchased capacity on the Cloud Volumes ONTAP system.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#packages[Learn more about the Edge Cache license package.]
 
 === The setup wizard and GFC Configuration UI are enhanced to perform NetApp license registration
 
