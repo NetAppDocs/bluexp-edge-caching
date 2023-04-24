@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: concept-gfc.html
 keywords: global file cache
-summary: NetApp Global File Cache enables you to consolidate silos of distributed file servers into one cohesive global storage footprint in the public cloud. This creates a globally accessible file system in the cloud that all remote locations can use as if they were local.
+summary: NetApp BlueXP edge caching enables you to consolidate silos of distributed file servers into one cohesive global storage footprint in the public cloud. This creates a globally accessible file system in the cloud that all remote locations can use as if they were local.
 ---
 
-= Learn about Global File Cache
+= Learn about BlueXP edge caching
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,17 +13,19 @@ summary: NetApp Global File Cache enables you to consolidate silos of distribute
 :imagesdir: ./media/
 
 [.lead]
-NetApp Global File Cache enables you to consolidate silos of distributed file servers into one cohesive global storage footprint in the public cloud. This creates a globally accessible file system in the cloud that all remote locations can use as if they were local.
+NetApp BlueXP edge caching enables you to consolidate silos of distributed file servers into one cohesive global storage footprint in the public cloud. This creates a globally accessible file system in the cloud that all remote locations can use as if they were local.
+
+BlueXP edge caching is available in two deployment modes to fit your enterprise architecture: as in integrated service combined in a Cloud Volumes ONTAP instance (Cloud Volumes Edge Cache), or as an add-on component to your enterprise storage strategy (Global File Cache)
 
 == Overview
 
-Implementing Global File Cache results in a single, centralized storage footprint, versus a distributed storage architecture that requires local data management, backup, security management, storage, and infrastructure footprint in each location.
+Implementing BlueXP edge caching results in a single, centralized storage footprint, versus a distributed storage architecture that requires local data management, backup, security management, storage, and infrastructure footprint in each location.
 
-image:diagram_gfc_image1.png[A diagram showing how remote office locations access a single shared file system using Global File Cache.]
+image:diagram_gfc_image1.png[A diagram showing how remote office locations access a single shared file system using BlueXP edge caching.]
 
 == Features
 
-Global File Cache enables the following features:
+BlueXP edge caching enables the following features:
 
 * Consolidate and centralize your data into the public cloud and leverage the scalability and performance from enterprise-grade storage solutions
 
@@ -33,55 +35,55 @@ Global File Cache enables the following features:
 
 * Transparent access from branch locations through a global namespace with real time central file locking
 
-See more about Global File Cache features and use cases https://bluexp.netapp.com/global-file-cache[here^].
+See more about BlueXP edge caching features and use cases https://bluexp.netapp.com/global-file-cache[here^].
 
-== Global File Cache components
+== BlueXP edge caching components
 
-Global File Cache consists of the following components:
+BlueXP edge caching consists of the following components:
 
-* Global File Cache Management Server
-* Global File Cache Core
-* Global File Cache Edge (deployed in your remote locations)
+* Management Server
+* Core
+* Edge (deployed in your remote locations)
 
-The Global File Cache Core instance mounts to your corporate file shares hosted on your backend storage platform of choice (such as Cloud Volumes ONTAP, Cloud Volumes Service, and Azure NetApp Files) and creates the Global File Cache "Fabric" that provides the ability to centralize and consolidate unstructured data into a single set of data, whether it resides on one or multiple storage platforms in the public cloud.
+The BlueXP edge caching Core instance mounts to your corporate file shares hosted on your backend storage platform of choice (such as Cloud Volumes ONTAP, Cloud Volumes Service, and Azure NetApp Files) and creates the BlueXP edge caching "Fabric" that provides the ability to centralize and consolidate unstructured data into a single set of data, whether it resides on one or multiple storage platforms in the public cloud.
 
-image:diagram_gfc_image2.png[A diagram showing the details of a Global File Cache deployment with software installed in remote offices and in a central server in the cloud.]
+image:diagram_gfc_image2.png[A diagram showing the details of a BlueXP edge caching deployment with software installed in remote offices and in a central server in the cloud.]
 
 == Supported storage platforms
 
-The supported storage platforms for Global File Cache differ depending on the deployment option you select.
+The supported storage platforms for BlueXP edge caching differ depending on the deployment option you select.
 
 === Automated deployment options
 
-Global File Cache is supported with the following types of working environments when deployed using BlueXP (formerly Cloud Manager):
+BlueXP edge caching is supported with the following types of working environments when deployed using BlueXP:
 
 * Cloud Volumes ONTAP in Azure
 * Cloud Volumes ONTAP in AWS
 * Cloud Volumes ONTAP in Google Cloud
 
-This configuration lets you deploy and manage the entire Global File Cache server-side deployment, including Global File Cache Management Server and Global File Cache Core, from within BlueXP.
+This configuration lets you deploy and manage the entire BlueXP edge caching server-side deployment, including BlueXP edge caching Management Server and BlueXP edge caching Core, from within BlueXP.
 
 === Manual deployment options
 
-Global File Cache configurations are also supported with Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSx for ONTAP systems, and Cloud Volumes Service on Google Cloud. On-premises solutions are also available on NetApp AFF and FAS platforms. In these installations, the Global File Cache server-side components must be configured and deployed manually, not using BlueXP.
+BlueXP edge caching configurations are also supported with Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSx for ONTAP systems, and Cloud Volumes Service on Google Cloud. On-premises solutions are also available on NetApp AFF and FAS platforms. In these installations, the BlueXP edge caching server-side components must be configured and deployed manually, not by using BlueXP.
 
 See the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^] for details.
 
-== How Global File Cache works
+== How BlueXP edge caching works
 
-Global File Cache creates a software fabric that caches active data sets in remote offices globally. As a result, business users are guaranteed transparent data access and optimal performance on a global scale.
+BlueXP edge caching creates a software fabric that caches active data sets in remote offices globally. As a result, business users are guaranteed transparent data access and optimal performance on a global scale.
 
-image:diagram_gfc_image3.png[A diagram showing Global File Cache components at the Edge and the Core.]
+image:diagram_gfc_image3.png[A diagram showing BlueXP edge caching components at the Edge and the Core.]
 
 The topology referenced in this example is a hub and spoke model, whereby the network of remote offices/locations is accessing one common set of data in the cloud. The key points of this example are:
 
 * Centralized data store:
 ** Enterprise public cloud storage platform, such as Cloud Volumes ONTAP
 
-* Global File Cache Fabric:
+* BlueXP edge caching Fabric:
 ** Extension of the central data store to the remote locations
-** Global File Cache Core instance, mounting to corporate file shares (SMB).
-** Global File Cache Edge instances running in each remote location.
+** BlueXP edge caching Core instance, mounting to corporate file shares (SMB).
+** BlueXP edge caching Edge instances running in each remote location.
 ** Presents a virtual file share in each remote location that provides access to central data.
 ** Hosts the Intelligent File Cache on a custom-sized NTFS volume (`D:\`).
 
@@ -94,19 +96,19 @@ The topology referenced in this example is a hub and spoke model, whereby the ne
 
 == Cost
 
-The cost to use Global File Cache depends on the type of installation you have chosen.
+The cost to use BlueXP edge caching depends on the type of installation you have chosen.
 
 * All installations require that you deploy one or more volumes in the cloud (for example, Cloud Volumes ONTAP, Cloud Volumes Service, or Azure NetApp Files). This results in charges from the selected cloud provider.
 
 * All installations also require that you deploy two or more virtual machines (VMs) in the cloud. This results in charges from the selected cloud provider.
 
-** Global File Cache Management Server:
+** BlueXP edge caching Management Server:
 +
 In Azure, this runs on a D2s_V3 or equivalent (2 vCPU/8 GB RAM) VM with 127 GB Standard SSD
 +
 In AWS, this runs on a m4.large or equivalent (2 vCPU/8 GB RAM) instance with 127 GB general purpose SSD
 
-** Global File Cache Core:
+** BlueXP edge caching Core:
 +
 In Azure, this runs on a D4s_V3 or equivalent (4 vCPU/16 GB RAM) VM with 127 GB premium SSD
 +
@@ -114,14 +116,14 @@ In AWS, this runs on a m4.xlarge or equivalent (4 vCPU/16 GB RAM) instance with 
 
 * When installed with Cloud Volumes ONTAP (the supported configurations deployed completely through BlueXP), there are two pricing options:
 
-** For Cloud Volumes ONTAP systems, you can pay $3,000 for each Global File Cache Edge instance, per year.
-** Alternatively, for Cloud Volumes ONTAP systems in Azure and GCP, you can choose the Cloud Volumes ONTAP Edge Cache package. This capacity-based license allows you to deploy a single Global File Cache Edge instance for each 3 TiB of purchased capacity. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing[Learn more here].
+** For Cloud Volumes ONTAP systems, you can pay $3,000 for each BlueXP edge caching Edge instance, per year.
+** Alternatively, for Cloud Volumes ONTAP systems in Azure and GCP, you can choose the Cloud Volumes ONTAP Edge Cache package. This capacity-based license allows you to deploy a single BlueXP edge caching Edge instance for each 3 TiB of purchased capacity. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing[Learn more here^].
 
-* When installed using the manual deployment options the pricing is different. To see a high-level estimate of costs, see https://cloud.netapp.com/global-file-cache/roi[Calculate Your Savings Potential^] or consult your Global File Cache Solutions Engineer to discuss the best options for your enterprise deployment.
+* When installed using the manual deployment options the pricing is different. To see a high-level estimate of costs, see https://bluexp.netapp.com/global-file-cache/roi[Calculate Your Savings Potential^] or consult your NetApp Solutions Engineer to discuss the best options for your enterprise deployment.
 
 == Licensing
 
-Global File Cache includes a software-based License Management Server (LMS), which allows you to consolidate your license management and deploy licenses to all Core and Edge instances using an automated mechanism.
+BlueXP edge caching includes a software-based License Management Server (LMS), which allows you to consolidate your license management and deploy licenses to all Core and Edge instances using an automated mechanism.
 
 When you deploy your first Core instance in the datacenter or cloud, you can choose to designate that instance as the LMS for your organization. This LMS instance is configured once, connects to the subscription service (over HTTPS) and validates your subscription using the customer ID provided by our support/operations department upon enablement of the subscription. After you have made this designation, you associate your Edge instances with the LMS by providing your customer ID and the IP address of the LMS instance.
 
@@ -131,6 +133,6 @@ See the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20Us
 
 == Limitations
 
-The version of Global File Cache supported within BlueXP requires that the backend storage platform used as your central storage must be a working environment where you have deployed a Cloud Volumes ONTAP single node or HA pair in Azure, AWS, or Google Cloud.
+The version of BlueXP edge caching supported within BlueXP (Cloud Volumes Edge Cache) requires that the backend storage platform used as your central storage must be a working environment where you have deployed a Cloud Volumes ONTAP single node or HA pair in Azure, AWS, or Google Cloud.
 
 Other storage platforms are not supported at this time using BlueXP, but can be deployed using legacy deployment procedures. These other configurations, for example, Global File Cache using Amazon FSx for ONTAP systems, Azure NetApp Files, or Cloud Volumes Service on Google Cloud, are supported using the legacy procedures. See https://bluexp.netapp.com/global-file-cache/onboarding[Global File Cache overview and onboarding^] for details.

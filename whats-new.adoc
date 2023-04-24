@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, gfc, global file cache
-summary: Learn what's new in Global File Cache.
+summary: Learn what's new in BlueXP edge caching.
 ---
 
-= What's new with Global File Cache
+= What's new with BlueXP edge caching
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: Learn what's new in Global File Cache.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in Global File Cache.
+Learn what's new in BlueXP edge caching.
 
 // tag::whats-new[]
 == 5 April 2023 (version 2.2)

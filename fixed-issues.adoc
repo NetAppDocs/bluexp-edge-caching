@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: fixed-issues.html
 keywords: fixed issues, release notes, fixes, gfc, global file cache
-summary: See what issues have been fixed in Global File Cache.
+summary: See what issues have been fixed in BlueXP edge caching.
 ---
 
-= Fixed issues in Global File Cache
+= Fixed issues in BlueXP edge caching
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: See what issues have been fixed in Global File Cache.
 :imagesdir: ./media/
 
 [.lead]
-See what issues have been fixed in Global File Cache.
+See what issues have been fixed in BlueXP edge caching.
 
 == 27 March 2023 (version 2.2)
 

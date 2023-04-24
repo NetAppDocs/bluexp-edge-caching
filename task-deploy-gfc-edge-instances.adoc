@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: task-deploy-gfc-edge-instances.html
 keywords: global file cache, edge
-summary: After you have verified that your environment meets all the requirements, you install Global File Cache Edge software in each remote office.
+summary: After you have verified that your environment meets all the requirements, you install BlueXP edge caching Edge software in each remote office.
 ---
 
-= Deploy Global File Cache Edge instances
+= Deploy BlueXP edge caching Edge instances
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,19 +13,19 @@ summary: After you have verified that your environment meets all the requirement
 :imagesdir: ./media/
 
 [.lead]
-After you have verified that your environment meets all the requirements, you install Global File Cache Edge software in each remote office.
+After you have verified that your environment meets all the requirements, you install BlueXP edge caching Edge software in each remote office.
 
 == Before you begin
 
-To complete Global File Cache Edge configuration tasks, you need the following information:
+To complete BlueXP edge caching Edge configuration tasks, you need the following information:
 
-* Static IP addresses for each Global File Cache instance
+* Static IP addresses for each BlueXP edge caching instance
 
 * Subnet mask
 
 * Gateway IP address
 
-* The FQDN you wish to assign to each Global File Cache server
+* The FQDN you wish to assign to each BlueXP edge caching server
 
 * The DNS suffix (optional)
 
@@ -37,15 +37,15 @@ To complete Global File Cache Edge configuration tasks, you need the following i
 
 === Commonly used TCP ports
 
-There are several TCP ports used by Global File Cache services. It is mandatory that the devices can communicate on these ports and they be excluded from any WAN optimization devices or firewall restriction policies:
+There are several TCP ports used by BlueXP edge caching services. It is mandatory that the devices can communicate on these ports and they be excluded from any WAN optimization devices or firewall restriction policies:
 
-* Global File Cache Licensing TCP Port: 443
+* BlueXP edge caching Licensing TCP Port: 443
 
-* Global File Cache TCP Ports: 6618-6630
+* BlueXP edge caching TCP Ports: 6618-6630
 
-== Deploy the Global File Cache Virtual Template
+== Deploy the BlueXP edge caching Virtual Template
 
-The virtual template (`.OVA` and `.VHD`) images contain the latest release of the Global File Cache software. If you are deploying Global File Cache using the `.OVA` or `.VHD` virtual machine (VM) template, follow the steps as outlined in this section. It is assumed that you understand how to deploy the `.OVA` or `.VHD` template on the designated hypervisor platform.
+The virtual template (`.OVA` and `.VHD`) images contain the latest release of the BlueXP edge caching software. If you are deploying BlueXP edge caching using the `.OVA` or `.VHD` virtual machine (VM) template, follow the steps as outlined in this section. It is assumed that you understand how to deploy the `.OVA` or `.VHD` template on the designated hypervisor platform.
 
 Ensure that VM preferences, including resource reservations, are in line with the requirements as outlined in link:download-gfc-resources.html#physical-hardware-requirements[Virtual deployment requirements^].
 
@@ -62,23 +62,23 @@ Ensure that VM preferences, including resource reservations, are in line with th
 
 . During initial boot, when the Windows Server 2016 or 2019 operating system is preparing for first use, complete the out-of-the-box experience by installing the correct drivers and installing the necessary components for the respective hardware.
 
-. When the base install of the Global File Cache Edge instance has been completed, the Windows Server 2016 or 2019 operating system will guide you through an initial configuration wizard to configure operating system specifics such as localization and product key.
+. When the base installation of the BlueXP edge caching Edge instance has been completed, the Windows Server 2016 or 2019 operating system will guide you through an initial configuration wizard to configure operating system specifics such as localization and product key.
 
 . After the initial configuration wizard has completed, log in locally to the Windows Server 2016 or 2019 operating system with the following credentials:
 +
 * User name:  *FASTAdmin*
 * Password:  *Tal0nFAST!*
 
-. Configure your Windows Server VM, join to the organization's Active Directory domain, and proceed to the Global File Cache Edge configuration section.
+. Configure your Windows Server VM, join to the organization's Active Directory domain, and proceed to the BlueXP edge caching Edge configuration section.
 
-== Configure the Global File Cache Edge instance
+== Configure the BlueXP edge caching Edge instance
 
-The Global File Cache Edge instance connects to a Global File Cache Core to provide users at the branch office access to data center file server resources.
+The BlueXP edge caching Edge instance connects to a BlueXP edge caching Core to provide users at the branch office access to data center file server resources.
 
 [NOTE]
 The Edge instance must be licensed as part of your Cloud Volumes ONTAP deployment prior to beginning the configuration. See link:concept-gfc.html#licensing[Licensing^] for more information about licensing.
 
-If your configuration requires more than one Global File Cache Core to be installed because of a large number of Edge instances, you will configure some Edge instances to connect to the first Core and others to connect to the second Core. Make sure you have the FQDN or IP address, and other required information, for the correct Core instance.
+If your configuration requires more than one BlueXP edge caching Core to be installed because of a large number of Edge instances, you will configure some Edge instances to connect to the first Core and others to connect to the second Core. Make sure you have the FQDN or IP address, and other required information, for the correct Core instance.
 
 To configure the Edge instance, complete the following steps:
 
@@ -86,26 +86,26 @@ To configure the Edge instance, complete the following steps:
 
 . Click *Perform* next to the unchecked Core Configuration step listed in the "Edge Configuration Steps" section of the Initial Configuration assistant. This opens a new tab, GFC Edge, and shows the section _Core Instances_.
 
-. Provide the *Cloud Fabric ID* of the Global File Cache Core server. The Cloud Fabric ID is typically the NetBIOS name or the geographical location of the backend file server.
+. Provide the *Cloud Fabric ID* of the BlueXP edge caching Core server. The Cloud Fabric ID is typically the NetBIOS name or the geographical location of the backend file server.
 
-. Provide the *FQDN/IP Address* of the Global File Cache Core server:
+. Provide the *FQDN/IP Address* of the BlueXP edge caching Core server:
 .. (Optional) Check the *SSL* box to enable SSL support for enhanced encryption from the Edge to the Core.
 .. Enter the User Name and Password, which are the credentials of the Service Account used on the Core.
 
-. Click *Add* to confirm the addition of the Global File Cache Core appliance. A confirmation box will appear. Click *OK* to dismiss it.
+. Click *Add* to confirm the addition of the BlueXP edge caching Core appliance. A confirmation box will appear. Click *OK* to dismiss it.
 +
-image:screenshot_gfc_edge_install1.png[A screenshot showing the Edge entries that identify the Global File Cache Core that will be used.]
+image:screenshot_gfc_edge_install1.png[A screenshot showing the Edge entries that identify the BlueXP edge caching Core that will be used.]
 
-== Update Global File Cache Edge software
+== Update BlueXP edge caching Edge software
 
-Global File Cache frequently releases updates to the software, either patches, enhancements, or new features/functionality. Although the virtual template (`.OVA` and `.VHD`) images contain the latest release of the Global File Cache software, it is possible that a newer version is available on the NetApp Support Download portal.
+BlueXP edge caching frequently releases updates to the software, either patches, enhancements, or new features/functionality. Although the virtual template (`.OVA` and `.VHD`) images contain the latest release of the BlueXP edge caching software, it is possible that a newer version is available on the NetApp Support Download portal.
 
-Ensure that your Global File Cache instances are up to date with the latest version.
+Ensure that your BlueXP edge caching instances are up to date with the latest version.
 
 [NOTE]
 This software package can also be used for pristine installations on Microsoft Windows Server 2016 Standard or Datacenter edition, or Windows Server 2019 Standard or Datacenter edition, or used as part of your upgrade strategy.
 
-Below you can find the steps required to update the Global File Cache installation package:
+Below you can find the steps required to update the BlueXP edge caching installation package:
 
 .Steps
 
