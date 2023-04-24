@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-gfc-enduser-training.html
 keywords: global file cache, training
-summary: You will want to train your users on the best practices for accessing the shared files through Global File Cache.
+summary: You will want to train your users on the best practices for accessing the shared files through BlueXP edge caching.
 ---
 
 = End-user training
@@ -13,11 +13,11 @@ summary: You will want to train your users on the best practices for accessing t
 :imagesdir: ./media/
 
 [.lead]
-You will want to train your users on the best practices for accessing the shared files through Global File Cache.
+You will want to train your users on the best practices for accessing the shared files through BlueXP edge caching.
 
-This is the final phase of the Global File Cache deployment, the end-user implementation phase.
+This is the final phase of the BlueXP edge caching deployment, the end-user implementation phase.
 
-In order to prepare and streamline the end user on-boarding process, use the email template below that will help you to educate end users on what it means to work in a "central data" environment. This will help your users leverage all of the benefits of the Global File Cache solution. We have also published a video that can be shared to "train" users where needed.
+In order to prepare and streamline the end user on-boarding process, use the email template below that will help you to educate end users on what it means to work in a "central data" environment. This will help your users leverage all of the benefits of the BlueXP edge caching solution. We have also published a video that can be shared to "train" users where needed.
 
 Customize and forward the following resources to end users to prepare them for roll-out:
 

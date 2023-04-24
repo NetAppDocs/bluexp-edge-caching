@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: download-gfc-resources.html
 keywords: global file cache, edge
-summary: There are many requirements you need to be aware of before you begin to install Global File Cache Edge software in your remote offices.
+summary: There are many requirements you need to be aware of before you begin to install BlueXP edge caching Edge software in your remote offices.
 ---
 
-= Before you begin to deploy Global File Cache Edge instances
+= Before you begin to deploy BlueXP edge caching Edge instances
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,11 +13,11 @@ summary: There are many requirements you need to be aware of before you begin to
 :imagesdir: ./media/
 
 [.lead]
-There are many requirements you need to be aware of before you begin to install Global File Cache Edge software in your remote offices.
+There are many requirements you need to be aware of before you begin to install BlueXP edge caching Edge software in your remote offices.
 
 == Download required resources
 
-Download the Global File Cache Virtual Templates you are planning to use in your branch offices, the software installation package, and additional reference documentation:
+Download the BlueXP edge caching Virtual Templates you are planning to use in your branch offices, the software installation package, and additional reference documentation:
 
 * Windows Server 2016 Virtual Template:
 +
@@ -29,11 +29,11 @@ https://repo.cloudsync.netapp.com/gfc/2k16_GFC_2_2_0_41IMAGE.zip[Windows Server 
 https://repo.cloudsync.netapp.com/gfc/2k19-2.1.zip[Windows Server 2019 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
 https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_2_0_41IMAGE.zip[Windows Server 2019 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
-* Global File Cache Edge Software:
+* BlueXP edge caching Edge Software:
 +
 https://repo.cloudsync.netapp.com/gfc/GFC-2-2-0-41-Release.exe[NetApp GFC Software Installation Package (.EXE)^]
 //
-// * Global File Cache SCOM (Microsoft Systems Center Operations Manager) Package:
+// * BlueXP edge caching SCOM (Microsoft Systems Center Operations Manager) Package:
 // +
 // https://repo.cloudsync.netapp.com/gfc/SCOM-151.zip[NetApp GFC SCOM Management Package (.ZIP)]
 
@@ -45,41 +45,41 @@ https://repo.cloudsync.netapp.com/gfc/ci-gfc-dashboards.zip[NetApp GFC Cloud Ins
 +
 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide (.PDF)^]
 
-link:task-deploy-gfc-edge-instances.html#update-global-file-cache-edge-software[Follow these steps] to upgrade your Global File Cache Edge software.
+link:task-deploy-gfc-edge-instances.html#update-bluexp-edge caching-edge-software[Follow these steps] to upgrade your BlueXP edge caching Edge software.
 
-NOTE: When deploying Global File Cache on a Windows Server 2016, you should be using .NET Framework 4.8 and Windows WebView2 framework.
+NOTE: When deploying BlueXP edge caching on Windows Server 2016, you should be using .NET Framework 4.8 and Windows WebView2 framework.
 
-== Designing and deploying Global File Cache Edge
+== Designing and deploying BlueXP edge caching Edge
 
-Depending on your requirements, you might need to deploy one or multiple Global File Cache Edge instances based on the concurrent user sessions in a branch office. The Edge instance presents the virtual file share to the end users within the branch office, which has been transparently extended from the associated Global File Cache Core instance. The Global File Cache Edge should contain a `D:\` NTFS volume, which contains the cached files within the branch office.
+Depending on your requirements, you might need to deploy one or multiple Edge instances based on the concurrent user sessions in a branch office. The Edge instance presents the virtual file share to the end users within the branch office, which has been transparently extended from the associated BlueXP edge caching Core instance. The BlueXP edge caching Edge should contain a `D:\` NTFS volume, which contains the cached files within the branch office.
 
-NOTE: For the Global File Cache Edge, it is important to understand the link:concept-before-you-begin-to-deploy-gfc.html#sizing-guidelines[sizing guidelines]. This will assist you in making the correct design for your Global File Cache deployment. You would also need to determine what's right for your environment in terms of scale, availability of resources, and in terms of redundancy.
+NOTE: For the BlueXP edge caching Edge, it is important to understand the link:concept-before-you-begin-to-deploy-gfc.html#sizing-guidelines[sizing guidelines]. This will assist you in making the correct design for your BlueXP edge caching deployment. You would also need to determine what's right for your environment in terms of scale, availability of resources, and in terms of redundancy.
 
-=== Global File Cache Edge instance
+=== BlueXP edge caching Edge instance
 
-When deploying a Global File Cache Edge instance, you need to provision a single VM, either by deploying Windows Server 2016 Standard or Datacenter Edition, or Windows Server 2019 Standard or Datacenter Edition, or using the Global File Cache `.OVA` or `.VHD` template, which includes the Windows Server operating system of choice and Global File Cache software.
+When deploying a BlueXP edge caching Edge instance, you need to provision a single VM, either by deploying Windows Server 2016 Standard or Datacenter Edition, or Windows Server 2019 Standard or Datacenter Edition, or using the edge caching `.OVA` or `.VHD` template, which includes the Windows Server operating system of choice and BlueXP edge caching software.
 
 ==== Quick steps
 
-. Deploy the Global File Cache Virtual Template, or Windows Server 2016 VM, or Windows Server 2019 Standard or Datacenter edition.
+. Deploy the BlueXP edge caching Virtual Template, or Windows Server 2016 VM, or Windows Server 2019 Standard or Datacenter edition.
 
 . Ensure the VM is connected to the network, joined to the domain, and accessible through RDP.
 
-. Install the latest Global File Cache Edge software.
+. Install the latest BlueXP edge caching Edge software.
 
-. Identify the Global File Cache Management Server and Core instance.
+. Identify the BlueXP edge caching Management Server and Core instance.
 
-. Configure the Global File Cache Edge instance.
+. Configure the BlueXP edge caching Edge instance.
 
-== Global File Cache Edge requirements
+== BlueXP edge caching Edge requirements
 
-Global File Cache Edge is designed to function across all platforms supporting Windows Server 2016 and 2019, bringing simplified IT to corporate remote offices and beyond. Critically, Global File Cache can be deployed on your existing hardware infrastructure, virtualization, or hybrid/public cloud environments in almost every case if they meet a few base-level requirements.
+The BlueXP edge caching Edge is designed to function across all platforms supporting Windows Server 2016 and 2019, bringing simplified IT to corporate remote offices and beyond. Critically, BlueXP edge caching can be deployed on your existing hardware infrastructure, virtualization, or hybrid/public cloud environments in almost every case if they meet a few base-level requirements.
 
-Global File Cache Edge requires the following hardware and software resources to function optimally. For more information about overall sizing guidelines, see link:concept-before-you-begin-to-deploy-gfc.html#sizing-guidelines[sizing guidelines].
+The Edge requires the following hardware and software resources to function optimally. For more information about overall sizing guidelines, see link:concept-before-you-begin-to-deploy-gfc.html#sizing-guidelines[sizing guidelines].
 
 === Hardened server appliance
 
-The Global File Cache installation package creates a hardened software appliance on any Microsoft Windows Server instance. _Do Not Uninstall_ the Global File Cache Package. Uninstalling Global File Cache will impact the functionality of the server instance and might require a full rebuild of the server instance.
+The BlueXP edge caching installation package creates a hardened software appliance on any Microsoft Windows Server instance. _Do Not Uninstall_ the BlueXP edge caching Package. Uninstalling BlueXP edge caching will impact the functionality of the server instance and might require a full rebuild of the server instance.
 
 === Physical hardware requirements
 
@@ -95,7 +95,7 @@ The Global File Cache installation package creates a hardened software appliance
 
 === Virtual deployment requirements
 
-Hypervisor platforms are known to be subject to performance degradation from a storage subsystem perspective (for example, latency). For optimal performance using Global File Cache, a physical server instance with SSD is recommended.
+Hypervisor platforms are known to be subject to performance degradation from a storage subsystem perspective (for example, latency). For optimal performance using BlueXP edge caching, a physical server instance with SSD is recommended.
 
 For best performance in virtual environments, in addition to the physical host requirements, the following requirements and resource reservations must be met:
 
@@ -119,11 +119,11 @@ VMware vSphere 6.x and later:
 
 ** Hard Disk Shares must be set to *High*.
 
-** Devices.hotplug must be set to *False* using the vSphere Client to prevent Microsoft Windows from presenting Global File Cache drives as removable.
+** Devices.hotplug must be set to *False* using the vSphere Client to prevent Microsoft Windows from presenting BlueXP edge caching drives as removable.
 
 * Networking: Network Interface must be set to *VMXNET3* (may require VM Tools).
 
-Global File Cache runs on Windows Server 2016 and 2019, hence the virtualization platform needs to support the operating system, as well as integration with utilities enhancing the performance of the VM's guest operating system and management of the VM, such as VM Tools.
+The Edge runs on Windows Server 2016 and 2019, hence the virtualization platform needs to support the operating system, as well as integration with utilities enhancing the performance of the VM's guest operating system and management of the VM, such as VM Tools.
 
 === Partition sizing requirements
 
@@ -141,15 +141,15 @@ For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20Fil
 
 === Networking
 
-* Firewall: TCP ports should be allowed between the Global File Cache Edge and Management Server and Core instances.
+* Firewall: TCP ports should be allowed between the BlueXP edge caching Edge and Management Server and Core instances.
 +
-Global File Cache TCP Ports: 443 (HTTPS - LMS), 6618 - 6630.
+BlueXP edge caching TCP Ports: 443 (HTTPS - LMS), 6618 - 6630.
 
-* Network optimization devices (such as Riverbed Steelhead) must be configured to pass-thru Global File Cache specific ports (TCP 6618-6630).
+* Network optimization devices (such as Riverbed Steelhead) must be configured to pass-thru BlueXP edge caching specific ports (TCP 6618-6630).
 
 === Client workstation and application best practices
 
-Global File Cache transparently integrates into customer's environments, allowing users to access centralized data using their client workstations, running enterprise applications. Using Global File Cache, data is accessed through a direct drive mapping or through a DFS namespace. For more information about the Global File Cache Fabric, Intelligent File Caching, and key aspects of the software, consult the link:concept-before-you-begin-to-deploy-gfc.html[Before you begin to Deploy Global File Cache^] section.
+BlueXP edge caching transparently integrates into customer's environments, allowing users to access centralized data using their client workstations, running enterprise applications. Using BlueXP edge caching, data is accessed through a direct drive mapping or through a DFS namespace. For more information about the BlueXP edge caching Fabric, Intelligent File Caching, and key aspects of the software, consult the link:concept-before-you-begin-to-deploy-gfc.html[Before you begin to Deploy BlueXP edge caching^] section.
 
 To ensure an optimal experience and performance, it is important to comply with the Microsoft Windows Client requirements and best practices as outlined in the Global File Cache User Guide. This applies to all versions of Microsoft Windows.
 
@@ -157,9 +157,9 @@ For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20Fil
 
 === Firewall and Antivirus best practices
 
-While Global File Cache makes a reasonable effort to validate that the most common antivirus application suites are compatible with Global File Cache, NetApp cannot guarantee and is not responsible for any incompatibilities or performance issues caused by these programs, or their associated updates, service packs, or modifications.
+While BlueXP edge caching makes a reasonable effort to validate that the most common antivirus application suites are compatible with Global File Cache, NetApp cannot guarantee and is not responsible for any incompatibilities or performance issues caused by these programs, or their associated updates, service packs, or modifications.
 
-Global File Cache does not recommend the installation nor application of monitoring or antivirus solutions on any Global File Cache enabled instance (Core or Edge). Should a solution be installed, by choice or by policy, the following best practices and recommendations must be applied. For common antivirus suites, see Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+NetApp does not recommend the installation nor application of monitoring or antivirus solutions on any BlueXP edge caching enabled instance (Core or Edge). Should a solution be installed, by choice or by policy, the following best practices and recommendations must be applied. For common antivirus suites, see Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Firewall settings
 
@@ -167,21 +167,21 @@ Global File Cache does not recommend the installation nor application of monitor
 
 ** Retain firewall settings as default.
 
-** Recommendation: Leave Microsoft firewall settings and services at the default setting of OFF, and not started for standard Global File Cache Edge instances.
+** Recommendation: Leave Microsoft firewall settings and services at the default setting of OFF, and not started for standard BlueXP edge caching Edge instances.
 
 ** Recommendation: Leave Microsoft firewall settings and services at the default setting of ON, and started for Edge instances that also run the Domain Controller role.
 
 * Corporate firewall:
 
-** Global File Cache Core instance listens on TCP ports 6618-6630, ensure that Global File Cache Edge instances can connect to these TCP ports.
+** The BlueXP edge caching Core instance listens on TCP ports 6618-6630, ensure that BlueXP edge caching Edge instances can connect to these TCP ports.
 
-** Global File Cache instances require communications to the Global File Cache Management Server on TCP port 443 (HTTPS).
+** BlueXP edge caching instances require communications to the BlueXP edge caching Management Server on TCP port 443 (HTTPS).
 
-* Network optimization solutions/devices must be configured to pass-thru Global File Cache specific ports.
+* Network optimization solutions/devices must be configured to pass-thru BlueXP edge caching specific ports.
 
 === Antivirus best practices
 
-This section helps you to understand the requirements when running antivirus software on a Windows Server instance running Global File Cache. Global File Cache has tested most commonly used antivirus products including Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium, and Windows Defender for use in conjunction with Global File Cache. The antivirus software should be certified by NetApp and is supported only if configured with the proper exclusion list. See Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
+NetApp has tested most commonly used antivirus products including Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium, and Windows Defender for use in conjunction with BlueXP edge caching. The antivirus software should be certified by NetApp and is supported only if configured with the proper exclusion list. See Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
 
 [NOTE]
 Adding antivirus to an Edge appliance can introduce a 10-20% impact on user performance.
@@ -192,7 +192,7 @@ For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20Fil
 
 Antivirus software or other third-party indexing or scanning utilities should never scan drive D:\ on the Edge instance. These scans of Edge server drive D:\ will result in numerous file open requests for the entire cache namespace. This will result in file fetches over the WAN to all file servers being optimized at the data center. WAN connection flooding and unnecessary load on the Edge instance will occur resulting in performance degradation.
 
-In addition to the D:\ drive, the following Global File Cache directory and processes should generally be excluded from all antivirus applications:
+In addition to the D:\ drive, the following BlueXP edge caching directory and processes should generally be excluded from all antivirus applications:
 
 * `C:\Program Files\TalonFAST\`
 
@@ -234,32 +234,32 @@ In addition to the D:\ drive, the following Global File Cache directory and proc
 
 == NetApp Support policy
 
-Global File Cache instances are designed specifically for Global File Cache as the primary application running on a Windows Server 2016 and 2019 platform. Global File Cache requires priority access to platform resources, for example, disk, memory, network interfaces, and can place high demands on these resources. Virtual deployments require memory/CPU reservations and high-performance disks.
+BlueXP edge caching instances are designed specifically as the primary application running on a Windows Server 2016 and 2019 platform. BlueXP edge caching requires priority access to platform resources, for example, disk, memory, network interfaces, and can place high demands on these resources. Virtual deployments require memory/CPU reservations and high-performance disks.
 
-* For branch office deployments of Global File Cache, supported services and applications on the server running Global File Cache are limited to:
+* For branch office deployments, supported services and applications on the server running BlueXP edge caching are limited to:
 
 ** DNS/DHCP
 
-** Active Directory domain controller (Global File Cache must be on a separate volume)
+** Active Directory domain controller (BlueXP edge caching must be on a separate volume)
 
 ** Print services
 
 ** Microsoft System Center Configuration Manager (SCCM)
 
-** Global File Cache approved client-side system agents and anti-virus applications
+** BlueXP edge caching approved client-side system agents and anti-virus applications
 
-* NetApp Support and maintenance applies only to Global File Cache.
+* NetApp Support and maintenance applies only to BlueXP edge caching.
 
 * Line of business productivity software,  which are typically resource intensive, for example,  database servers, mail servers, and so on, are not supported.
 
-* The customer is responsible for any non-Global File Cache software which might be installed on the server running Global File Cache:
+* The customer is responsible for any non-BlueXP edge caching software which might be installed on the server running BlueXP edge caching:
 
-** If any third-party software package causes software or resource conflicts with Global File Cache or performance is compromised,  Global File Cache's support organization might require the customer to disable or remove the software from the server running Global File Cache.
+** If any third-party software package causes software or resource conflicts with BlueXP edge caching or performance is compromised,  the NetApp support organization might require the customer to disable or remove the software from the server running BlueXP edge caching.
 
-** It is the customer's responsibility for all installation, integration, support, and upgrade of any software added to the server running the Global File Cache application.
+** It is the customer's responsibility for all installation, integration, support, and upgrade of any software added to the server running the BlueXP edge caching application.
 
-* Systems management utilities/agents such as antivirus tools and licensing agents might be able to coexist. However, except for the supported services and applications listed above, these applications are not supported by Global File Cache and the same guidelines as above must still be followed:
+* Systems management utilities/agents such as antivirus tools and licensing agents might be able to coexist. However, except for the supported services and applications listed above, these applications are not supported by BlueXP edge caching and the same guidelines as above must still be followed:
 
 ** It is the customer's responsibility for all installation, integration, support, and upgrade of any software added.
 
-** If a customer does install any third-party software package that causes, or is suspected to be causing, software or resource conflicts with Global File Cache or performance is compromised, there might be a requirement by Global File Cache's support organization to disable/remove the software.
+** If a customer does install any third-party software package that causes, or is suspected to be causing, software or resource conflicts with BlueXP edge caching or performance is compromised, there might be a requirement by BlueXP edge caching's support organization to disable/remove the software.
