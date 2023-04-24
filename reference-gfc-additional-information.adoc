@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-gfc-additional-information.html
 keywords: global file cache
-summary: Use the following links to learn more about Global File Cache and other NetApp products.
+summary: Use the following links to learn more about BlueXP edge caching and other NetApp products.
 ---
 
 = Additional information
@@ -14,9 +14,9 @@ summary: Use the following links to learn more about Global File Cache and other
 
 [.lead]
 
-Use the following links to learn more about Global File Cache and other NetApp products:
+Use the following links to learn more about BlueXP edge caching and other NetApp products:
 
-* Global File Cache FAQ
+* BlueXP edge caching FAQ
 +
 ** See a list of frequently asked questions and answers https://bluexp.netapp.com/global-file-cache-faq[here^]
 
@@ -27,10 +27,10 @@ Use the following links to learn more about Global File Cache and other NetApp p
 ** See additional documentation for NetApp cloud products https://docs.netapp.com/us-en/cloud/[here^]
 ** See additional documentation for all NetApp products https://www.netapp.com/support-and-training/documentation/[here^]
 
-* Customer support for Global File Cache users with Cloud Volumes ONTAP is available through these channels:
+* Customer support for BlueXP edge caching users with Cloud Volumes ONTAP is available through these channels:
 +
 ** Guided Problem Solving, Case Management, Knowledgebase, Downloads, Tools, and more go https://bluexp.netapp.com/gfc-support[here^]
 ** Login to the NetApp Support at https://mysupport.netapp.com with your NSS credentials
 ** For immediate assistance for a P1 issue call: +1 856.481.3990 (Option 2)
 
-* Customer support for Global File Cache users utilizing Cloud Volumes Services and Azure NetApp Files is available through standard support from your provider. Please contact Google Customer Support or Microsoft Customer Support respectively.
+* Customer support for BlueXP edge caching users utilizing Cloud Volumes Services and Azure NetApp Files is available through standard support from your provider. Please contact Google Customer Support or Microsoft Customer Support respectively.
