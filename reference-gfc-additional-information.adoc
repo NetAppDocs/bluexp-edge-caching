@@ -20,7 +20,7 @@ Use the following links to learn more about BlueXP edge caching and other NetApp
 +
 ** See a list of frequently asked questions and answers https://bluexp.netapp.com/global-file-cache-faq[here^]
 
-* https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[Global File Cache User Guide^]
+* https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[Global File Cache User Guide^]
 
 * NetApp Product Documentation
 +

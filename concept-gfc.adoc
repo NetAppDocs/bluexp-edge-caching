@@ -67,7 +67,7 @@ This configuration lets you deploy and manage the entire BlueXP edge caching ser
 
 BlueXP edge caching configurations are also supported with Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSx for ONTAP systems, and Cloud Volumes Service on Google Cloud. On-premises solutions are also available on NetApp AFF and FAS platforms. In these installations, the BlueXP edge caching server-side components must be configured and deployed manually, not by using BlueXP.
 
-See the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^] for details.
+See the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^] for details.
 
 == How BlueXP edge caching works
 
@@ -129,7 +129,7 @@ When you deploy your first Core instance in the datacenter or cloud, you can cho
 
 When you purchase additional Edge licenses or renew your subscription, our support/operations department updates the license details, for example, the number of sites or subscription end date. After the LMS queries the subscription service, the license details are automatically updated on the LMS instance and will apply to your GFC Core and Edge instances.
 
-See the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^] for additional details about licensing.
+See the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^] for additional details about licensing.
 
 == Limitations
 

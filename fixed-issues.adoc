@@ -15,6 +15,26 @@ summary: See what issues have been fixed in BlueXP edge caching.
 [.lead]
 See what issues have been fixed in BlueXP edge caching.
 
+== 1 August 2023 (version 2.3)
+
+* The following Optimus Configuration UI fixes have been made:
+** Shows meaningful information for errors instead of exception strings.
+** Displays the license expiry date correctly instead of any default values. 
+** Displays the username/password fields correctly when SSL is enabled in the UI.
+** Does not become unresponsive when an unreachable GFC Core is configured on the Optimus UI Edge configuration tab.
+** Enables you to select multiple cache/edge names from the Edge dropdown List.
+* The License Summary information is displayed correctly while viewing expired and non-expired licenses.
+* Fixed the TappN service to restart only when the configuration is updated successfully.
+* Added a refresh button in the first-time wizard to show the Edge count.
+* SSL information is now shown in the first-time wizard summary page.
+* Added infrastructure in Tum to allow configuring minidump timeouts and to perform a minidump correctly.
+* Optimus and the first-time wizard will show the appropriate license count and will show an exception when the license count becomes zero.
+* Optimus PSM now displays an appropriate error message when the Edge server name entered is empty.
+* Fixed an issue where pre-population jobs are not correctly applied to multiple cache names in Optimus PSM.
+* The License Manager configuration is enhanced to display hard errors instead of soft errors.
+* The Zoura registration UI will show an error if it's already configured.
+* Optimus UI and Optimus PSM now show CPU and memory requirements of 8 CPU and 32 GB RAM respectively.
+
 == 27 March 2023 (version 2.2)
 
 * Fixed an issue of converting the time format of running a pre-population job for 'last modification time' option.
@@ -60,12 +80,3 @@ See what issues have been fixed in BlueXP edge caching.
 * The TappN pre-population service is updated to skip fetching files if free cache space falls below the lower threshold value.
 * Fixed an issue in the License Manager Server Service (LMS) while writing a trace log.
 * The Logging infrastructure for Tum is updated to be more scalable with high performance.
-
-== 17 December 2021 (version 1.2.0)
-
-* The Configuration UI (Optimus) is enhanced to validate the date field entries while adding pre-population jobs.
-* Pre-population is enhanced to monitor cache utilization and will skip populating if cache usage reaches close to cache cleaner parameters.
-* Removed the hard dependency of the License Management Server (LMS) Service running locally with Policy configuration.
-* The GFC Kernel driver is enhanced to avoid a crash in the SMB Server service in Windows Server 2016/2019.
-* Fixed an exception in the LMS Service.
-* Service Start types for the License Manager Server Service (LMS), License Manager Client Service (LMC), and Pre-population Service (TappN) are changed from 'Automatic Delayed' to 'Automatic'.
