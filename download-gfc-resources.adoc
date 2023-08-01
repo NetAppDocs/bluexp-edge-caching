@@ -21,17 +21,17 @@ Download the BlueXP edge caching Virtual Templates you are planning to use in yo
 
 * Windows Server 2016 Virtual Template:
 +
-https://repo.cloudsync.netapp.com/gfc/2k16-2.1.zip[Windows Server 2016 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
-https://repo.cloudsync.netapp.com/gfc/2k16_GFC_2_2_0_41IMAGE.zip[Windows Server 2016 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
+https://repo.cloudsync.netapp.com/gfc/2k16-2_3_0-55.zip[Windows Server 2016 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
+https://repo.cloudsync.netapp.com/gfc/2k16_GFC_2_3_0_55IMAGE.zip[Windows Server 2016 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
 * Windows Server 2019 Virtual Template:
 +
-https://repo.cloudsync.netapp.com/gfc/2k19-2.1.zip[Windows Server 2019 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
-https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_2_0_41IMAGE.zip[Windows Server 2019 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
+https://repo.cloudsync.netapp.com/gfc/2k19-2_3_0-55.zip[Windows Server 2019 .OVA including NetApp GFC (VMware VSphere 6.5+)^]
+https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_3_0_55IMAGE.zip[Windows Server 2019 .VHDX including NetApp GFC (Microsoft Hyper-v)^]
 
-* BlueXP edge caching Edge Software:
+* BlueXP Edge Caching Edge Software:
 +
-https://repo.cloudsync.netapp.com/gfc/GFC-2-2-0-41-Release.exe[NetApp GFC Software Installation Package (.EXE)^]
+https://repo.cloudsync.netapp.com/gfc/GFC-2-3-0-55-Release.exe[NetApp GFC Software Installation Package (.EXE)^]
 //
 // * BlueXP edge caching SCOM (Microsoft Systems Center Operations Manager) Package:
 // +
@@ -43,9 +43,9 @@ https://repo.cloudsync.netapp.com/gfc/ci-gfc-dashboards.zip[NetApp GFC Cloud Ins
 
 * Global File Cache Documentation:
 +
-https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide (.PDF)^]
+https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide (.PDF)^]
 
-link:task-deploy-gfc-edge-instances.html#update-bluexp-edge caching-edge-software[Follow these steps] to upgrade your BlueXP edge caching Edge software.
+link:task-deploy-gfc-edge-instances.html#update-bluexp-edge-caching-edge-software[Follow these steps] to upgrade your BlueXP edge caching Edge software.
 
 NOTE: When deploying BlueXP edge caching on Windows Server 2016, you should be using .NET Framework 4.8 and Windows WebView2 framework.
 
@@ -137,7 +137,7 @@ The Edge runs on Windows Server 2016 and 2019, hence the virtualization platform
 
 Disk Latency on the Global File Cache Intelligent File Cache disk (D:\) should deliver < 0.5ms average I/O disk latency and 1MiBps throughput per concurrent user.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Networking
 
@@ -153,13 +153,13 @@ BlueXP edge caching transparently integrates into customer's environments, allow
 
 To ensure an optimal experience and performance, it is important to comply with the Microsoft Windows Client requirements and best practices as outlined in the Global File Cache User Guide. This applies to all versions of Microsoft Windows.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Firewall and Antivirus best practices
 
 While BlueXP edge caching makes a reasonable effort to validate that the most common antivirus application suites are compatible with Global File Cache, NetApp cannot guarantee and is not responsible for any incompatibilities or performance issues caused by these programs, or their associated updates, service packs, or modifications.
 
-NetApp does not recommend the installation nor application of monitoring or antivirus solutions on any BlueXP edge caching enabled instance (Core or Edge). Should a solution be installed, by choice or by policy, the following best practices and recommendations must be applied. For common antivirus suites, see Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+NetApp does not recommend the installation nor application of monitoring or antivirus solutions on any BlueXP edge caching enabled instance (Core or Edge). Should a solution be installed, by choice or by policy, the following best practices and recommendations must be applied. For common antivirus suites, see Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 === Firewall settings
 
@@ -181,12 +181,12 @@ NetApp does not recommend the installation nor application of monitoring or anti
 
 === Antivirus best practices
 
-NetApp has tested most commonly used antivirus products including Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium, and Windows Defender for use in conjunction with BlueXP edge caching. The antivirus software should be certified by NetApp and is supported only if configured with the proper exclusion list. See Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
+NetApp has tested most commonly used antivirus products including Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium, and Windows Defender for use in conjunction with BlueXP edge caching. The antivirus software should be certified by NetApp and is supported only if configured with the proper exclusion list. See Appendix A in the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^]
 
 [NOTE]
 Adding antivirus to an Edge appliance can introduce a 10-20% impact on user performance.
 
-For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
+For more information, see the https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf[NetApp Global File Cache User Guide^].
 
 ==== Configure exclusions
 
