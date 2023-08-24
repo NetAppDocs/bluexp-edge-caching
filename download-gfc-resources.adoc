@@ -83,9 +83,9 @@ The BlueXP edge caching installation package creates a hardened software applian
 
 === Physical hardware requirements
 
-* Minimum 4 CPU cores
+* Minimum 8 CPU cores
 
-* Minimum 16 GB RAM
+* Minimum 32 GB RAM
 
 * Dedicated single or redundant 1 Gbps NIC
 
@@ -101,17 +101,17 @@ For best performance in virtual environments, in addition to the physical host r
 
 Microsoft Hyper-V 2012 R2 and later:
 
-* Processor (CPU): CPUs must be set as *Static*: Minimum: 4 vCPU cores.
+* Processor (CPU): CPUs must be set as *Static*: Minimum: 8 vCPU cores.
 
-* Memory (RAM):  Minimum: 16 GB set as *Static*.
+* Memory (RAM):  Minimum: 32 GB set as *Static*.
 
 * Hard-disk provisioning: Hard Disks must be configured as *Fixed Disk*.
 
 VMware vSphere 6.x and later:
 
-* Processor (CPU): Reservation of CPU Cycles must be set. Minimum: 4 vCPU cores @ 10000 MHz.
+* Processor (CPU): Reservation of CPU Cycles must be set. Minimum: 8 vCPU cores @ 10000 MHz.
 
-* Memory (RAM): Minimum: Reservation of 16 GB.
+* Memory (RAM): Minimum: Reservation of 32 GB.
 
 * Hard-disk provisioning:
 
