@@ -107,12 +107,16 @@ The cost to use BlueXP edge caching depends on the type of installation you have
 In Azure, this runs on a D2s_V3 or equivalent (2 vCPU/8 GB RAM) VM with 127 GB Standard SSD
 +
 In AWS, this runs on a m4.large or equivalent (2 vCPU/8 GB RAM) instance with 127 GB general purpose SSD
++
+In Google Cloud, this runs on a n2-standard-2 or equivalent (2 vCPU/8 GB RAM) instance with 127 GB general purpose SSD
 
 ** BlueXP edge caching Core:
 +
-In Azure, this runs on a D4s_V3 or equivalent (4 vCPU/16 GB RAM) VM with 127 GB premium SSD
+In Azure, this runs on a D8s_V4 or equivalent (8 vCPU/32 GB RAM) VM with 127 GB premium SSD
 +
-In AWS, this runs on a m4.xlarge or equivalent (4 vCPU/16 GB RAM) instance with 127 GB general purpose SSD
+In AWS, this runs on a m4.2xlarge or equivalent (8 vCPU/32 GB RAM) instance with 127 GB general purpose SSD
++
+In Google Cloud, this runs on a n2-standard-8 or equivalent (8 vCPU/32 GB RAM) instance with 127 GB general purpose SSD
 
 * When installed with Cloud Volumes ONTAP (the supported configurations deployed completely through BlueXP), there are two pricing options:
 
