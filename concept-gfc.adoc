@@ -15,7 +15,7 @@ summary: NetApp BlueXP edge caching enables you to consolidate silos of distribu
 [.lead]
 NetApp BlueXP edge caching enables you to consolidate silos of distributed file servers into one cohesive global storage footprint in the public cloud. This creates a globally accessible file system in the cloud that all remote locations can use as if they were local.
 
-BlueXP edge caching is available in two deployment modes to fit your enterprise architecture: as in integrated service combined in a Cloud Volumes ONTAP instance (Cloud Volumes Edge Cache), or as an add-on component to your enterprise storage strategy (Global File Cache)
+BlueXP edge caching is available in two deployment modes to fit your enterprise architecture: as an integrated service combined with a Cloud Volumes ONTAP instance, referred to as Cloud Volumes Edge Cache (CVEC), or as an add-on component to your enterprise storage strategy, referred to as Global File Cache (GFC).
 
 == Overview
 
