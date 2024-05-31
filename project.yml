@@ -46,37 +46,3 @@ sidebar:
 product-family:
   name: BlueXP
   repo: bluexp-family
-homepage:
-  tiles:
-    - title: Get started
-      links:
-        - title: Learn about BlueXP edge caching
-          url: concept-gfc.html
-        - title: What's New
-          url: whats-new.html
-        - title: Limitations
-          url: concept-gfc.html#limitations
-    - title: Deploy components
-      links:
-        - title: Deploy Cloud Volumes ONTAP as the storage platform
-          url: task-gfc-getting-started.html#deploy-cloud-volumes-ontap-as-your-storage-platform
-        - title: Deploy the BlueXP edge caching Management Server and Core
-          url: task-gfc-getting-started.html#enable-bluexp-edge caching-in-your-working-environment
-        - title: Deploy BlueXP edge caching Edge instances
-          url: task-deploy-gfc-edge-instances.html
-    - title: Train users
-      links:
-        - title: End-user training
-          url: concept-gfc-enduser-training.html
-    - title: Blogs & community
-      links:
-        - title: NetApp Community
-          url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-        - title: BlueXP blog
-          url: https://bluexp.netapp.com/blog
-        - title: Cloud webinars
-          url: https://bluexp.netapp.com/events
-    - title: Other resources
-      links:
-        - title: BlueXP Edge Caching use cases
-          url: https://bluexp.netapp.com/global-file-cache
