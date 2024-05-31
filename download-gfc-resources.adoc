@@ -32,10 +32,6 @@ https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_3_0_55IMAGE.zip[Windows Server 
 * BlueXP Edge Caching Edge Software:
 +
 https://repo.cloudsync.netapp.com/gfc/GFC-2-4-1-72-Release.exe[NetApp GFC Software Installation Package (.EXE)^]
-//
-// * BlueXP edge caching SCOM (Microsoft Systems Center Operations Manager) Package:
-// +
-// https://repo.cloudsync.netapp.com/gfc/SCOM-151.zip[NetApp GFC SCOM Management Package (.ZIP)]
 
 * Global File Cache Dashboards for Cloud Insights:
 +
